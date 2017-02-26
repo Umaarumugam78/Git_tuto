@@ -1,0 +1,124 @@
+a=float(input("enter value of a:"))
+b=float(input("enter value of b:"))
+c=float(input("enter value of c:"))
+
+s=(a+b+c)/2
+
+print(s)
+
+area=(s*(s-a)*(s-b)*(s-c))**0.5
+
+print("area of the trianle:", area)
+
+
+x=float(input("enter value of x:"))
+
+sqrt=(x**0.5)
+
+print("sqrt root of %0.2f if %0.4f:" %(x,sqrt))
+
+
+
+x=5
+y=8
+
+swap=x
+x=y
+y=swap
+
+print ("the current value of x=", format(y))
+print ("the current value of y=", format(x))
+
+
+k=float(input("enter kilometers here:"))
+
+m=k*.62
+
+print("converted %0.2f kilometer to %0.4f miles" %(k,m))
+
+
+
+a=float(input("enter value of a:"))
+b=float(input("enter value of b:"))
+c=float(input("enter value of c:"))
+
+if (a>b) and (a>c):
+    maxi=a
+elif (b>a) and (b>c):
+    maxi=b
+else:
+    maxi=c
+
+#M=max(a,b,c)
+
+print ("largest no of %0.0f,%0.0f,%0.0f is %0.0f" %(a,b,c,maxi))
+
+
+a=float(input("enter value of a:"))
+
+if a<0:
+    print ("negative")
+elif a==0:
+    print ("zero")
+else:
+    print ("positive")
+
+**
+
+var=3
+
+for a in range(1,14):
+    print (var,'X',a,'=',var*a)
+
+
+
+a=float(input("enter value of a:"))
+
+if (a%2==0):
+    print( "%0.2f is a even number" %a)
+else:
+    print( "%0.2f is a odd number" %a)
+
+***
+y=int(input("enter value of year:"))
+
+l=y%4
+if l==0:
+    print ("% is a leap year:" %y)
+
+else:
+
+    print ("% is not a leap year:" %y)
+
+
+
+
+num1=int(input("enter the first number:"))
+num2=int(input("enter the second number:"))
+
+def COHCF(num1,num2):
+
+    if num1>num2:
+        smaller=num2
+    else:
+        num2>num1
+        smaller=num1
+
+    for i in range(1,smaller+1):
+        if((num1%i==0)and(num2%i==0)):
+            hcf=i
+        return hcf
+
+print("the H.C.F of", num1, "and",num2,"is", COHCF(num1,num2))
+
+
+
+mystr=input("enter you word here:")
+
+words=mystr.split()
+
+words.sort()
+
+print("the sorted words are:")
+for word in words:
+    print(word)r
